@@ -55,11 +55,14 @@
      <Compile Include="Assets\Plugins\Pixelplacement\iTween\Sample\MoveSample.cs" />
      <Compile Include="Assets\Plugins\Pixelplacement\iTween\Sample\RotateSample.cs" />
      <Compile Include="Assets\Plugins\Pixelplacement\iTween\Sample\SampleInfo.cs" />
+     <None Include="Assets\Optimize SDKohaku-Chanz\Shader\Unitychan_chara_eye.shader" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
      <None Include="Assets\link.xml" />
      <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
      <None Include="Assets\Vuforia\Shaders\RenderVideoBackground.shader" />
+     <None Include="Assets\Optimize SDKohaku-Chanz\Readme_Optimize_SD Kohaku-Chanz.txt" />
+     <None Include="Assets\Optimize SDKohaku-Chanz\Shader\readme.txt" />
      <None Include="Assets\readme_SDK.txt" />
      <None Include="Assets\StreamingAssets\Vuforia\AR_Storybook_Serpent_Slayer.xml" />
      <None Include="Assets\Vuforia\Shaders\VideoBackground.shader" />

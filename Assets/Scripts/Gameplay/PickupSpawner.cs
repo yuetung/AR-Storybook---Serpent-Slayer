@@ -57,7 +57,7 @@ public class PickupSpawner : MonoBehaviour
         {
             int ranX = Random.Range((int)WorldBorders.LeftBorder, (int)WorldBorders.RightBorder);
             int ranY = Random.Range((int)WorldBorders.BottomBorder, (int)WorldBorders.TopBorder);
-            Vector3 newPosition = new Vector3(ranX, ranY, 5.72f);
+            Vector3 newPosition = new Vector3(ranX, ranY, 6f);
 
             Collider[] hit = Physics.OverlapSphere(newPosition, (int)Metrics.FRUIT);
 
@@ -69,7 +69,7 @@ public class PickupSpawner : MonoBehaviour
             else
             {
                 // .. We found a valid spot, create the food here
-                Quaternion rot = Quaternion.Euler(-90f, 0f, 0f);
+                Quaternion rot = Quaternion.Euler(90f, 180f, 0f);
                 GameObject fruit = ObjectsPoolManager.Instance.GetPooledObject(pickups[0].prefab, newPosition, rot);
                 fruit.transform.SetParent(pickupsParent);
 
