@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AR Storybook - Serpent Slayer", "Assembly-CSharp.csproj", "{0A9BEFDA-B4FF-82EB-9A40-820B48DF8E01}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AR Storybook - Serpent Slayer", "Assembly-CSharp-firstpass.csproj", "{30F51BB3-9F07-E5F4-74CD-3A1CEA2B96ED}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AR Storybook - Serpent Slayer", "Assembly-CSharp-Editor.csproj", "{1116E04D-33E6-9E90-26E8-1975EAE523A1}"
 EndProject
 Global
@@ -15,6 +17,10 @@ Global
 		{0A9BEFDA-B4FF-82EB-9A40-820B48DF8E01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A9BEFDA-B4FF-82EB-9A40-820B48DF8E01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A9BEFDA-B4FF-82EB-9A40-820B48DF8E01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30F51BB3-9F07-E5F4-74CD-3A1CEA2B96ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30F51BB3-9F07-E5F4-74CD-3A1CEA2B96ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30F51BB3-9F07-E5F4-74CD-3A1CEA2B96ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30F51BB3-9F07-E5F4-74CD-3A1CEA2B96ED}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1116E04D-33E6-9E90-26E8-1975EAE523A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1116E04D-33E6-9E90-26E8-1975EAE523A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1116E04D-33E6-9E90-26E8-1975EAE523A1}.Release|Any CPU.ActiveCfg = Release|Any CPU

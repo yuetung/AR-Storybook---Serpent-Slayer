@@ -71,6 +71,7 @@ namespace Vuforia
             Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
             Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
 			AudioSource[] audioComponents = GetComponentsInChildren<AudioSource>(true);
+			Canvas[] canvasComponents = GetComponentsInChildren<Canvas>(true);
 
             // Enable rendering:
             foreach (Renderer component in rendererComponents)
@@ -84,8 +85,14 @@ namespace Vuforia
                 component.enabled = true;
             }
 
-			// Disable Audios:
+			// Enable Audios:
 			foreach (AudioSource component in audioComponents)
+			{
+				component.enabled = true;
+			}
+
+			// Enable Canvas:
+			foreach (Canvas component in canvasComponents)
 			{
 				component.enabled = true;
 			}
@@ -99,6 +106,7 @@ namespace Vuforia
             Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
             Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
 			AudioSource[] audioComponents = GetComponentsInChildren<AudioSource>(true);
+			Canvas[] canvasComponents = GetComponentsInChildren<Canvas>(true);
 
             // Disable rendering:
             foreach (Renderer component in rendererComponents)
@@ -114,6 +122,12 @@ namespace Vuforia
 
 			// Disable Audios:
 			foreach (AudioSource component in audioComponents)
+			{
+				component.enabled = false;
+			}
+
+			// Disable Canvas:
+			foreach (Canvas component in canvasComponents)
 			{
 				component.enabled = false;
 			}
