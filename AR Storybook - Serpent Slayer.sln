@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AR Storybook - Serpent Slayer", "Assembly-CSharp.csproj", "{0A9BEFDA-B4FF-82EB-9A40-820B48DF8E01}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{0A9BEFDA-B4FF-82EB-9A40-820B48DF8E01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AR Storybook - Serpent Slayer", "Assembly-CSharp-firstpass.csproj", "{30F51BB3-9F07-E5F4-74CD-3A1CEA2B96ED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{30F51BB3-9F07-E5F4-74CD-3A1CEA2B96ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AR Storybook - Serpent Slayer", "Assembly-CSharp-Editor.csproj", "{1116E04D-33E6-9E90-26E8-1975EAE523A1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{1116E04D-33E6-9E90-26E8-1975EAE523A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
