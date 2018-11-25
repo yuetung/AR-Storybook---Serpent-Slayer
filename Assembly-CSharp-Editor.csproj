@@ -311,9 +311,6 @@
  <Reference Include="UnityEditor.Graphs">
  <HintPath>D:/Unity2018noVuforia/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
- <Reference Include="UnityEditor.WindowsStandalone.Extensions">
- <HintPath>D:/Unity2018noVuforia/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
- </Reference>
  <Reference Include="Vuforia.UnityExtensions.Editor">
  <HintPath>D:/Unity/Projects/AR Storybook - Serpent Slayer/Assets/Vuforia/Editor/Scripts/Vuforia.UnityExtensions.Editor.dll</HintPath>
  </Reference>
