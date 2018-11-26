@@ -3,7 +3,7 @@ Copyright (c) 2010-2014 Qualcomm Connected Experiences, Inc.
 All Rights Reserved.
 Confidential and Proprietary - Protected under copyright and other laws.
 ==============================================================================*/
-
+using System.Collections;
 using UnityEngine;
 
 namespace Vuforia
@@ -19,8 +19,8 @@ namespace Vuforia
         private TrackableBehaviour mTrackableBehaviour;
     
         #endregion // PRIVATE_MEMBER_VARIABLES
-
-
+		private bool[] setActiveStorage;
+		private bool[] finalSetActiveStorage;
 
         #region UNTIY_MONOBEHAVIOUR_METHODS
     
@@ -68,10 +68,20 @@ namespace Vuforia
 
         private void OnTrackingFound()
         {
+			Transform[] transforms = GetComponentsInChildren<Transform> (true);
             Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
             Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
 			AudioSource[] audioComponents = GetComponentsInChildren<AudioSource>(true);
 			Canvas[] canvasComponents = GetComponentsInChildren<Canvas>(true);
+
+			for (int i=0; i<transforms.Length; i++)
+			{
+				if (!transforms[i].gameObject.GetInstanceID().Equals(gameObject.GetInstanceID ())) {
+					transforms[i].gameObject.SetActive (finalSetActiveStorage[i]);
+					print (i);
+				}
+			}
+			finalSetActiveStorage = null;
 
             // Enable rendering:
             foreach (Renderer component in rendererComponents)
@@ -103,22 +113,42 @@ namespace Vuforia
 
         private void OnTrackingLost()
         {
-            Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
-            Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
+			StartCoroutine (Disabler());
+
+        }
+
+        #endregion // PRIVATE_METHODS
+
+		IEnumerator Disabler(){
+			yield return new WaitForSeconds (0);
+			Transform[] transforms = GetComponentsInChildren<Transform> (true);
+			Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
+			Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
 			AudioSource[] audioComponents = GetComponentsInChildren<AudioSource>(true);
 			Canvas[] canvasComponents = GetComponentsInChildren<Canvas>(true);
 
-            // Disable rendering:
-            foreach (Renderer component in rendererComponents)
-            {
-                component.enabled = false;
-            }
+			setActiveStorage=new bool[transforms.Length];
+			for (int i=0; i<transforms.Length; i++)
+			{
+				if (!transforms[i].gameObject.GetInstanceID().Equals(gameObject.GetInstanceID ())) {
+					setActiveStorage [i] = transforms[i].gameObject.activeSelf;
+					transforms[i].gameObject.SetActive (false);
+				}
+			}
+			if (finalSetActiveStorage==null) {
+				finalSetActiveStorage = setActiveStorage;
+			}
+			// Disable rendering:
+			foreach (Renderer component in rendererComponents)
+			{
+				component.enabled = false;
+			}
 
-            // Disable colliders:
-            foreach (Collider component in colliderComponents)
-            {
-                component.enabled = false;
-            }
+			// Disable colliders:
+			foreach (Collider component in colliderComponents)
+			{
+				component.enabled = false;
+			}
 
 			// Disable Audios:
 			foreach (AudioSource component in audioComponents)
@@ -132,9 +162,9 @@ namespace Vuforia
 				component.enabled = false;
 			}
 
-            Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
-        }
-
-        #endregion // PRIVATE_METHODS
+			Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
+		}
     }
+
+
 }

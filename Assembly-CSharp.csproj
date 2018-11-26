@@ -51,13 +51,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\BGLooper.cs" />
+     <Compile Include="Assets\Scripts\BossScript.cs" />
+     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\EnemyScript.cs" />
+     <Compile Include="Assets\Scripts\Extend Script\ActionHelper.cs" />
+     <Compile Include="Assets\Scripts\Extend Script\FxHelper.cs" />
+     <Compile Include="Assets\Scripts\Extend Script\ParticleSystemFixer.cs" />
+     <Compile Include="Assets\Scripts\Extend Script\SoundHelper.cs" />
+     <Compile Include="Assets\Scripts\GameCompleteScript.cs" />
+     <Compile Include="Assets\Scripts\GameOverScript.cs" />
      <Compile Include="Assets\Scripts\Gameplay\DifficultyPregression.cs" />
      <Compile Include="Assets\Scripts\Gameplay\PickupSpawner.cs" />
+     <Compile Include="Assets\Scripts\GUIHealth.cs" />
      <Compile Include="Assets\Scripts\Hazards\Wall.cs" />
+     <Compile Include="Assets\Scripts\Health.cs" />
      <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
      <Compile Include="Assets\Scripts\Managers\PlayerSettings.cs" />
      <Compile Include="Assets\Scripts\Managers\ScoreManager.cs" />
      <Compile Include="Assets\Scripts\Managers\SoundManager.cs" />
+     <Compile Include="Assets\Scripts\Menu.cs" />
+     <Compile Include="Assets\Scripts\MeteorMove.cs" />
      <Compile Include="Assets\Scripts\Misc\DestroyDelayed.cs" />
      <Compile Include="Assets\Scripts\Misc\DestroyDelayedGeneric.cs" />
      <Compile Include="Assets\Scripts\Misc\Tags.cs" />
@@ -69,6 +83,10 @@
      <Compile Include="Assets\Scripts\Player\PlayerVFX.cs" />
      <Compile Include="Assets\Scripts\Player\SnakeHead.cs" />
      <Compile Include="Assets\Scripts\Player\SnakeNode.cs" />
+     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\Score.cs" />
+     <Compile Include="Assets\Scripts\ShootScript.cs" />
+     <Compile Include="Assets\Scripts\TouchControl.cs" />
      <Compile Include="Assets\Scripts\UI\HUD.cs" />
      <Compile Include="Assets\Scripts\UI\PauseButton.cs" />
      <Compile Include="Assets\Scripts\UI\ScoreText.cs" />
@@ -77,6 +95,7 @@
      <Compile Include="Assets\Scripts\Utilities\ObjectsPoolManager.cs" />
      <Compile Include="Assets\Scripts\Utilities\PooledObject.cs" />
      <Compile Include="Assets\Scripts\Utilities\PooledObjectScriptBase.cs" />
+     <Compile Include="Assets\Scripts\Weapon.cs" />
      <Compile Include="Assets\Vuforia\Scripts\BackgroundPlaneBehaviour.cs" />
      <Compile Include="Assets\Vuforia\Scripts\CloudRecoBehaviour.cs" />
      <Compile Include="Assets\Vuforia\Scripts\CylinderTargetBehaviour.cs" />
@@ -121,11 +140,11 @@
      <None Include="Assets\Optimize SDKohaku-Chanz\Readme_Optimize_SD Kohaku-Chanz.txt" />
      <None Include="Assets\Optimize SDKohaku-Chanz\Shader\readme.txt" />
      <None Include="Assets\readme_SDK.txt" />
-     <None Include="Assets\StreamingAssets\Vuforia\AR_Storybook_Serpent_Slayer.xml" />
      <None Include="Assets\Vuforia\Shaders\VideoBackground.shader" />
      <None Include="Assets\license_3rdpartynotice.txt" />
      <None Include="Assets\Vuforia\Editor\WebcamProfiles\profiles.xml" />
      <None Include="Assets\Vuforia\Shaders\DepthMask.shader" />
+     <None Include="Assets\StreamingAssets\Vuforia\AR_Storybook_Serpent_Slayer.xml" />
      <None Include="Assets\Vuforia\Shaders\ClippingMask.shader" />
      <None Include="Assets\Vuforia\Shaders\BrightTexture.shader" />
      <None Include="Assets\Vuforia\Shaders\Text3D.shader" />

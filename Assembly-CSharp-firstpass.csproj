@@ -64,11 +64,11 @@
      <None Include="Assets\Optimize SDKohaku-Chanz\Readme_Optimize_SD Kohaku-Chanz.txt" />
      <None Include="Assets\Optimize SDKohaku-Chanz\Shader\readme.txt" />
      <None Include="Assets\readme_SDK.txt" />
-     <None Include="Assets\StreamingAssets\Vuforia\AR_Storybook_Serpent_Slayer.xml" />
      <None Include="Assets\Vuforia\Shaders\VideoBackground.shader" />
      <None Include="Assets\license_3rdpartynotice.txt" />
      <None Include="Assets\Vuforia\Editor\WebcamProfiles\profiles.xml" />
      <None Include="Assets\Vuforia\Shaders\DepthMask.shader" />
+     <None Include="Assets\StreamingAssets\Vuforia\AR_Storybook_Serpent_Slayer.xml" />
      <None Include="Assets\Vuforia\Shaders\ClippingMask.shader" />
      <None Include="Assets\Vuforia\Shaders\BrightTexture.shader" />
      <None Include="Assets\Vuforia\Shaders\Text3D.shader" />
